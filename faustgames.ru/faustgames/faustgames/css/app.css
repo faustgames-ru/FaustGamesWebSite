@@ -1,0 +1,150 @@
+﻿@font-face {
+    font-family: roboto-medium;
+    src: local("Roboto-Medium"), 
+    url("../fonts/Roboto-Medium.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;    
+}
+
+a :hover :active {
+    background-color: transparent;
+    text-decoration: none;    
+}
+
+body, html {
+    height: 100%;
+}
+
+#header {
+    background: 
+        linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 95%, rgba(0,0,0,1) 100%),
+        linear-gradient(65deg, rgba(0,0,0,0.0) 0%, rgba(255,255,255,0.0) 30%, rgba(255,255,255,1.0) 40%, rgba(255,255,255,0.0) 50%, rgba(0,0,0,0.0) 100%), 
+        linear-gradient(-65deg, rgba(0,0,0,0.0) 0%, rgba(255,255,255,0.0) 50%, rgba(255,255,255,1.0) 60%, rgba(255,255,255,0.0)70%, rgba(0,0,0,0.0) 100%), 
+        linear-gradient(to right, rgba(0,0,0,1.0) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,1.0) 100%), 
+        url("../img/abstract_tile.png");
+}
+/*
+#footer {
+    height: 76px;
+    background: 
+        linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(255,255,255,0) 95%, rgba(255,255,255,0.25) 100%),
+        linear-gradient(65deg, rgba(0,0,0,0.0) 0%, rgba(255,255,255,0.0) 50%, rgba(255,255,255,1.0) 60%, rgba(255,255,255,0.0)70%, rgba(0,0,0,0.0) 100%), 
+        linear-gradient(-65deg, rgba(0,0,0,0.0) 0%, rgba(255,255,255,0.0) 30%, rgba(255,255,255,1.0) 40%, rgba(255,255,255,0.0) 50%, rgba(0,0,0,0.0) 100%), 
+        linear-gradient(to right, rgba(0,0,0,1.0) 0%, rgba(0,0,0,0) 70%, rgba(0,0,0,1.0) 100%), 
+        url("../img/abstract_tile.png");
+}
+*/
+#content {
+    height: 100%;
+    background-color: #343434;
+}
+
+#glcanvas {
+    position: absolute;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+}
+
+#keywords {
+    position: absolute;
+    z-index: 102;
+    width: 100%;
+    height: calc(100% - 186px);
+}
+
+#keywords h1 {
+    font-family: roboto-medium;
+    font-size: 36px;
+    font-weight: normal;
+    color: #fff;
+}
+
+#keywords h2 {
+    font-family: roboto-medium;
+    font-size: 24px;
+    font-weight: normal;
+    color: #ccc;
+    text-shadow: #fff 0px 0px 0px;
+}
+
+h1 {
+    font-family: roboto-medium;
+    font-size: 36px;
+    font-weight: normal;
+    color: #680000;
+    text-shadow: #fff 1px 1px 1px;
+}
+
+
+h2 {
+    font-family: roboto-medium;
+    font-size: 24px;
+    font-weight: normal;
+    color: #000;
+    text-shadow: #fff 1px 1px 1px;
+}
+
+#header_center_block {
+    width: 1024px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#header_logo_image {
+    position: absolute;
+    padding-left: 36px;
+    padding-top: 5px;
+    width: 100px;
+    height: 104px;
+}
+
+#header_logo_title {
+    position: absolute;
+    padding-left: 165px;
+    padding-top: 35px;
+    z-index: 105;
+}
+
+#header_logo_description {
+    position: absolute;
+    padding-left: 245px;
+    padding-top: 70px;
+    z-index: 104;
+}
+
+#home {
+    position: absolute;
+    padding-left: 556px;
+    padding-top: 75px;
+    z-index: 103;
+}
+
+#about {
+    position: absolute;
+    padding-left: 716px;
+    padding-top: 75px;
+    z-index:102;
+}
+
+#contacts {
+    position: absolute;
+    padding-left: 866px;
+    padding-top: 75px;
+    z-index: 101;
+}

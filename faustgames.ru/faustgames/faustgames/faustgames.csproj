@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{2CD68E3D-CB3B-45E8-80F5-D70FD14D454E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="content\asteroids\asteroids.i" />
+    <Content Include="content\asteroids\asteroids_180.i" />
+    <Content Include="content\asteroids\asteroids_80.i" />
+    <Content Include="content\asteroids\Asteroid_180.jpg" />
+    <Content Include="content\asteroids\Asteroid_180_glw.jpg" />
+    <Content Include="content\asteroids\Asteroid_180_nrm.png" />
+    <Content Include="content\asteroids\Asteroid_180_spc.jpg" />
+    <Content Include="content\asteroids\Asteroid_80.jpg" />
+    <Content Include="content\asteroids\Asteroid_80_glw.jpg" />
+    <Content Include="content\asteroids\Asteroid_80_nrm.png" />
+    <Content Include="content\asteroids\Asteroid_80_spc.jpg" />
+    <Content Include="content\asteroids\cloud.png" />
+    <Content Include="content\asteroids\cracks_bump.jpg" />
+    <Content Include="content\asteroids\cracks_diffuse.jpg" />
+    <Content Include="content\asteroids\cracks_glow.jpg" />
+    <Content Include="content\asteroids\cracks_specular.jpg" />
+    <Content Include="content\asteroids\glass.jpg" />
+    <Content Include="content\asteroids\nebula1.png" />
+    <Content Include="content\asteroids\nebula2.png" />
+    <Content Include="content\asteroids\particle.png" />
+    <Content Include="content\asteroids\parts.i" />
+    <Content Include="content\asteroids\skybox_hd_xm.jpg" />
+    <Content Include="content\asteroids\skybox_hd_xp.jpg" />
+    <Content Include="content\asteroids\skybox_hd_ym.jpg" />
+    <Content Include="content\asteroids\skybox_hd_yp.jpg" />
+    <Content Include="content\asteroids\skybox_hd_zm.jpg" />
+    <Content Include="content\asteroids\skybox_hd_zp.jpg" />
+    <Content Include="content\asteroids\sphere.i" />
+    <Content Include="content\asteroids\teapot.i" />
+    <Content Include="content\coffee\background.jpg" />
+    <Content Include="content\coffee\light.png" />
+    <Content Include="content\coffee\steam.png" />
+    <Content Include="content\powerphone\generator_lights.png" />
+    <Content Include="content\powerphone\generator_ring.png" />
+    <Content Include="content\powerphone\generator_trails.png" />
+    <Content Include="content\powerphone\lightning1.png" />
+    <Content Include="content\powerphone\lightning2.png" />
+    <Content Include="content\powerphone\lightning3.png" />
+    <Content Include="content\powerphone\lightning4.png" />
+    <Content Include="content\powerphone\lightning5.png" />
+    <Content Include="content\powerphone\staticback.jpg" />
+    <Content Include="css\app.css" />
+    <TypeScriptCompile Include="scripts\entities\entities.ts" />
+    <TypeScriptCompile Include="scripts\framework\core.ts" />
+    <TypeScriptCompile Include="scripts\framework\system.ts" />
+    <TypeScriptCompile Include="scripts\framework\collections.ts" />
+    <Content Include="fx\effect_depth_map_ps.fx" />
+    <Content Include="fx\effect_depth_map_vs.fx" />
+    <Content Include="fx\effect_diffuse_ps.fx" />
+    <Content Include="fx\effect_diffuse_vs.fx" />
+    <Content Include="fx\effect_lens_flare_ps.fx" />
+    <Content Include="fx\effect_lens_flare_vs.fx" />
+    <Content Include="fx\effect_nebula_ps.fx" />
+    <Content Include="fx\effect_nebula_vs.fx" />
+    <Content Include="fx\effect_particles_emitter_clouds_ps.fx" />
+    <Content Include="fx\effect_particles_emitter_clouds_vs.fx" />
+    <Content Include="fx\effect_particles_emitter_ps.fx" />
+    <Content Include="fx\effect_particles_emitter_vs.fx" />
+    <Content Include="fx\effect_depth_map_postprocess_ps.fx" />
+    <Content Include="fx\effect_depth_map_postprocess_vs.fx" />
+    <Content Include="fx\effect_planar_fog_ps.fx" />
+    <Content Include="fx\effect_planar_fog_vs.fx" />
+    <Content Include="fx\effect_single_sprite_ps.fx" />
+    <Content Include="fx\effect_single_sprite_vs.fx" />
+    <Content Include="fx\effect_skybox_ps.fx" />
+    <Content Include="fx\effect_skybox_vs.fx" />
+    <Content Include="fx\effect_solid_ps.fx" />
+    <Content Include="fx\effect_solid_vs.fx" />
+    <Content Include="fx\effect_specular_bump_ps.fx" />
+    <Content Include="fx\effect_specular_bump_vs.fx" />
+    <Content Include="fx\effect_volume_fog_depth_map_ps.fx" />
+    <Content Include="fx\effect_volume_fog_depth_map_vs.fx" />
+    <Content Include="fx\effect_volume_fog_postprocess_ps.fx" />
+    <Content Include="fx\effect_volume_fog_postprocess_vs.fx" />
+    <Content Include="fx\effect_volume_fog_ps.fx" />
+    <Content Include="fx\effect_volume_fog_vs.fx" />
+    <Content Include="img\header_logo.png" />
+    <Content Include="index.html" />
+    <TypeScriptCompile Include="scripts\framework\math.ts" />
+    <TypeScriptCompile Include="scripts\framework\rendering.ts" />
+    <TypeScriptCompile Include="scripts\views.ts" />
+    <TypeScriptCompile Include="scripts\framework\animation.ts" />
+    <Content Include="scripts\rendering\effects.ts" />
+    <TypeScriptCompile Include="scripts\scenes\asteroids.ts" />
+    <TypeScriptCompile Include="scripts\scenes\coffee.ts" />
+    <Content Include="scripts\scenes\powerphone.ts" />
+    <TypeScriptCompile Include="scripts\scenes\springflowers.ts" />
+    <Content Include="unknown_page.html" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="scripts\application.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\Roboto-Medium.ttf" />
+    <Content Include="content\asteroids\teapot.v" />
+    <Content Include="content\asteroids\asteroids.v" />
+    <Content Include="content\asteroids\asteroids.t" />
+    <Content Include="content\asteroids\parts.t" />
+    <Content Include="content\asteroids\parts.v" />
+    <Content Include="content\asteroids\sphere.t" />
+    <Content Include="content\asteroids\sphere.v" />
+    <Content Include="content\asteroids\asteroids_180.t" />
+    <Content Include="content\asteroids\asteroids_180.v" />
+    <Content Include="content\asteroids\asteroids_80.t" />
+    <Content Include="content\asteroids\asteroids_80.v" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="content\springflowers\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>faustgames</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:9008/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(VSToolsPath)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
